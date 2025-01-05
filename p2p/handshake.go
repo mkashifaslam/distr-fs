@@ -1,8 +1,8 @@
 package p2p
 
 // HandshakeFunc ...?
-type HandshakeFunc func(Peer) error
+type HandshakeFunc func(*TCPPeer) error
 
-func NOPHandshakeFunc(Peer) error {
+func NOPHandshakeFunc(TCPPeer) error {
 	return nil
 }
